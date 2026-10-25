@@ -1,0 +1,929 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+  color: #111827;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.aura-navbar {
+  min-height: 80px;
+  background: #07111f;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.aura-navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.aura-navbar .nav-link {
+  color: #d8e0eb;
+  margin-left: 22px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.aura-navbar .nav-link:hover {
+  color: #2f80ff;
+}
+
+.aura-navbar .size-link {
+  color: #2f80ff;
+}
+
+.aura-navbar .navbar-toggler {
+  background: #ffffff;
+}
+
+
+/* =========================
+   PAGE OFFSET
+========================= */
+
+.aura-main,
+.aura-page {
+  padding-top: 80px;
+}
+
+
+/* =========================
+   HOME HERO
+========================= */
+
+.aura-hero {
+  background: #07111f;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.hero-number,
+.title-number {
+  color: #2f80ff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.aura-hero h1 {
+  font-size: clamp(55px, 8vw, 105px);
+  line-height: 0.9;
+  font-weight: 900;
+  margin: 20px 0 30px;
+  letter-spacing: -4px;
+}
+
+.aura-hero p {
+  color: #aeb9c8;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+.aura-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #2f80ff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.aura-btn:hover {
+  background: #ffffff;
+  color: #07111f;
+}
+
+.aura-hero-image {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.aura-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-tag {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background: #2f80ff;
+  color: #ffffff;
+  padding: 12px 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.aura-intro {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.intro-content {
+  max-width: 800px;
+}
+
+.intro-content span,
+.aura-about span,
+.aura-contact span,
+.size-section span,
+.size-calculator span {
+  color: #2f80ff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.intro-content h2 {
+  font-size: clamp(40px, 6vw, 70px);
+  line-height: 1;
+  margin: 20px 0;
+  letter-spacing: -2px;
+}
+
+.intro-content p {
+  color: #657184;
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.aura-categories {
+  padding: 100px 0;
+}
+
+.aura-category {
+  background: #ffffff;
+  height: 100%;
+}
+
+.aura-category img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.aura-category > div {
+  padding: 25px;
+}
+
+.aura-category span {
+  color: #2f80ff;
+  font-weight: 800;
+}
+
+.aura-category h3 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.aura-category p {
+  color: #687385;
+  margin: 0;
+}
+
+
+/* =========================
+   HOME SIZE BANNER
+========================= */
+
+.aura-banner {
+  padding: 100px 0;
+  background: #dce9ff;
+}
+
+.banner-content {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+}
+
+.banner-content span {
+  color: #2f80ff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.banner-content h2 {
+  font-size: 55px;
+  margin: 20px 0;
+}
+
+.banner-content p {
+  color: #526173;
+  margin-bottom: 30px;
+}
+
+.banner-content a {
+  display: inline-block;
+  background: #07111f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.aura-title {
+  padding: 90px 0;
+  background: #07111f;
+  color: #ffffff;
+}
+
+.aura-title h1 {
+  font-size: clamp(45px, 7vw, 85px);
+  font-weight: 900;
+  letter-spacing: -3px;
+  margin: 15px 0;
+}
+
+.aura-title p {
+  color: #9eabba;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.aura-products {
+  padding: 90px 0;
+}
+
+.aura-product-card {
+  background: #ffffff;
+  height: 100%;
+  border: 1px solid #e0e5eb;
+}
+
+.aura-product-image {
+  height: 290px;
+  position: relative;
+  overflow: hidden;
+  background: #e8edf3;
+}
+
+.aura-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aura-product-image span {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #07111f;
+  color: #ffffff;
+  padding: 7px 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.aura-product-info {
+  padding: 25px;
+}
+
+.aura-product-info h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.aura-product-info strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.aura-product-info button {
+  width: 100%;
+  background: #07111f;
+  color: #ffffff;
+  border: 0;
+  padding: 13px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.aura-product-info button:hover {
+  background: #2f80ff;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+.aura-cart {
+  padding: 90px 0;
+}
+
+.aura-cart-item {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.aura-cart-item span {
+  color: #2f80ff;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.aura-cart-item h3 {
+  margin: 8px 0 0;
+}
+
+.aura-quantity {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.aura-quantity button {
+  border: 1px solid #07111f;
+  background: #ffffff;
+  width: 32px;
+  height: 32px;
+}
+
+.aura-summary {
+  background: #07111f;
+  color: #ffffff;
+  padding: 35px;
+}
+
+.aura-summary > span {
+  color: #2f80ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.aura-summary h2 {
+  font-size: 45px;
+  margin: 20px 0;
+}
+
+.aura-summary p {
+  color: #aab5c4;
+}
+
+.aura-summary button {
+  width: 100%;
+  border: 0;
+  background: #2f80ff;
+  color: #ffffff;
+  padding: 15px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.aura-empty {
+  background: #ffffff;
+  padding: 70px;
+  text-align: center;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.aura-about {
+  padding: 100px 0;
+}
+
+.aura-about h2 {
+  font-size: 55px;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.aura-about p {
+  color: #5e6a7a;
+  line-height: 1.9;
+}
+
+.aura-values {
+  margin-top: 80px;
+}
+
+.aura-values > div > div {
+  background: #ffffff;
+  padding: 35px;
+  height: 100%;
+  border-top: 4px solid #2f80ff;
+}
+
+.aura-values strong {
+  color: #2f80ff;
+}
+
+.aura-values h3 {
+  margin-top: 15px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.aura-contact {
+  padding: 100px 0;
+}
+
+.aura-contact h2 {
+  font-size: 55px;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.contact-block {
+  margin-top: 40px;
+}
+
+.contact-block strong {
+  color: #2f80ff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.contact-block p {
+  margin: 8px 0 25px;
+}
+
+.aura-form {
+  background: #ffffff;
+  padding: 40px;
+}
+
+.aura-form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.aura-form input,
+.aura-form textarea {
+  width: 100%;
+  border: 1px solid #dce1e7;
+  padding: 14px;
+  margin-bottom: 22px;
+  outline: none;
+}
+
+.aura-form input:focus,
+.aura-form textarea:focus {
+  border-color: #2f80ff;
+}
+
+.aura-form button {
+  background: #07111f;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 25px;
+  font-weight: 800;
+}
+
+.aura-form button:hover {
+  background: #2f80ff;
+}
+
+
+/* =========================
+   SIZE GUIDE
+========================= */
+
+.size-section {
+  padding: 100px 0;
+}
+
+.size-section h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.size-section p {
+  color: #647184;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.size-calculator {
+  background: #07111f;
+  color: #ffffff;
+  padding: 45px;
+}
+
+.size-calculator h2 {
+  font-size: 35px;
+  margin: 15px 0 30px;
+}
+
+.size-calculator label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.size-calculator input {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.size-calculator button {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  background: #2f80ff;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.size-result {
+  background: #ffffff;
+  color: #07111f;
+  padding: 25px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.size-result span {
+  color: #2f80ff;
+}
+
+.size-result strong {
+  font-size: 30px;
+}
+
+.measurement-note {
+  background: #dce9ff;
+  padding: 35px;
+  margin-top: 70px;
+}
+
+.measurement-note h3 {
+  margin-top: 0;
+}
+
+.measurement-note p {
+  margin: 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.aura-footer {
+  width: 100%;
+  max-width: 100%;
+  background: #07111f;
+  color: #ffffff;
+  padding: 70px 0 25px;
+  overflow: visible;
+}
+
+.aura-footer .container {
+  width: 100%;
+  max-width: 1140px;
+}
+
+.aura-footer h2 {
+  letter-spacing: 3px;
+}
+
+.aura-footer h5 {
+  color: #2f80ff;
+}
+
+.aura-footer p {
+  color: #9faaba;
+  line-height: 1.7;
+}
+
+.aura-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aura-footer-links a {
+  color: #d9e0e8;
+  text-decoration: none;
+}
+
+.aura-footer-links a:hover {
+  color: #2f80ff;
+}
+
+.aura-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #263344;
+  margin-top: 45px;
+  padding-top: 25px;
+  color: #8995a5;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+  .aura-navbar .nav-link {
+    margin-left: 0;
+    padding: 12px 0;
+  }
+
+  .aura-hero {
+    padding: 70px 0;
+  }
+
+  .aura-hero-image {
+    height: 400px;
+  }
+
+  .aura-title {
+    padding: 70px 0;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+  html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* NAVBAR */
+
+  .aura-navbar {
+    width: 100%;
+  }
+
+  .aura-navbar .navbar-brand {
+    font-size: 21px;
+    letter-spacing: 2px;
+  }
+
+  .aura-navbar .nav-link {
+    margin-left: 0;
+    padding: 12px 0;
+  }
+
+
+  /* HERO */
+
+  .aura-hero {
+    padding: 55px 0;
+  }
+
+  .aura-hero h1 {
+    font-size: 58px;
+  }
+
+  .aura-hero-image {
+    height: 320px;
+  }
+
+
+  /* SECTIONS */
+
+  .aura-intro,
+  .aura-categories,
+  .aura-banner,
+  .aura-products,
+  .aura-cart,
+  .aura-about,
+  .aura-contact,
+  .size-section {
+    padding: 60px 0;
+  }
+
+
+  /* HEADINGS */
+
+  .intro-content h2,
+  .aura-about h2,
+  .aura-contact h2 {
+    font-size: 40px;
+  }
+
+  .banner-content h2 {
+    font-size: 40px;
+  }
+
+
+  /* PRODUCTS */
+
+  .aura-product-image {
+    height: 250px;
+  }
+
+
+  /* CART */
+
+  .aura-cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  /* FOOTER */
+
+  .aura-footer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 50px 20px 25px;
+    overflow: visible;
+    text-align: center;
+  }
+
+  .aura-footer .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+
+  .aura-footer .row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .aura-footer .row > div {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+  }
+
+  .aura-footer h2 {
+    margin-bottom: 15px;
+  }
+
+  .aura-footer h5 {
+    margin-bottom: 15px;
+  }
+
+  .aura-footer p {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .aura-footer-links {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aura-footer-links a {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .aura-bottom {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+    padding-top: 20px;
+    text-align: center;
+    overflow: visible;
+  }
+
+  .aura-bottom p {
+    margin: 0;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .aura-hero h1 {
+    font-size: 48px;
+  }
+
+  .aura-hero-image {
+    height: 280px;
+  }
+
+  .aura-title h1 {
+    font-size: 43px;
+  }
+
+  .banner-content h2 {
+    font-size: 34px;
+  }
+
+  .aura-product-image {
+    height: 240px;
+  }
+
+  .size-calculator {
+    padding: 30px 20px;
+  }
+
+  .size-calculator h2 {
+    font-size: 30px;
+  }
+
+  .measurement-note {
+    padding: 25px 20px;
+  }
+
+  .aura-footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
